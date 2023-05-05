@@ -8,8 +8,8 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Change background color by typing a color or hex code</h1>
-
+    <h2>Change background color by typing a color or hex code</h2>
+    <h2>Make the image move by hovering your mouse over it</h2>
     <!-- tekstin kirjoitus alue -->
     <input type="text" id="colorInputText" />
 
@@ -28,5 +28,13 @@
         document.body.style.backgroundColor = color;
       }
     </script>
+    <img
+      id="news"
+      onmouseover="this.src='https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F001%2F931%2F957%2Fb02.jpg'"
+      onmouseout="this.src='https://i.kym-cdn.com/photos/images/newsfeed/001/931/955/181.jpg'"
+      height="100px"
+      width="100px"
+      src="https://i.kym-cdn.com/photos/images/newsfeed/001/931/955/181.jpg"
+    />
   </body>
 </html>
